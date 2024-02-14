@@ -26,6 +26,13 @@
     background-color: #B7FFF1;
   }
   
+  
+  @media (min-width: 600px) {
+    .body {
+      width: 50%;
+    }
+  }
+
   h1 {
     text-align: center;
     font-size: 5rem;
