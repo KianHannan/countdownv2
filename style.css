@@ -18,8 +18,11 @@
     box-sizing: border-box;
   }
   body {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
     font-family: "Ghibli";
-    color: #ffb3ff;
+    color: #ffa1b3;
     background-color: #B7FFF1;
   }
   
