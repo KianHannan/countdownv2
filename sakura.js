@@ -123,11 +123,8 @@ var Sakura = function Sakura(selector, options) {
     petal.style.marginTop = "".concat(-(Math.floor(Math.random() * 20) + 15), "px");
     petal.style.width = "".concat(width, "px"); // Remove petals of which the animation ended.
 
-    PrefixedEvent(petal, 'AnimationEnd', function () {
-      if (!elementInViewport(petal)) {
-        petal.remove();
-      }
-    }); // Remove petals that float out of the viewport.
+ 
+    // Remove petals that float out of the viewport.
 
     PrefixedEvent(petal, 'AnimationIteration', function () {
       if (!elementInViewport(petal)) {
@@ -154,7 +151,7 @@ Sakura.prototype.start = function () {
 Sakura.prototype.stop = function () {
   var _this2 = this;
 
-  var graceful = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : false;
+  var graceful = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : true;
   var animId = this.el.dataset.sakuraAnimId;
 
   if (animId) {
@@ -172,6 +169,6 @@ Sakura.prototype.stop = function () {
       while (petals.length > 0) {
         petals[0].parentNode.removeChild(petals[0]);
       }
-    }, this.settings.delay + 50);
+    }, this.settings.delay + 500);
   }
 };
