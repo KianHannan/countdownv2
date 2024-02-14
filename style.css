@@ -50,8 +50,9 @@
     min-height: 90vh;
     display: flex;
     align-items: center;
+    flex: auto;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     margin-top: 10vh;
      
   }
@@ -61,10 +62,10 @@
     color: #857453;
     min-height: 90vh;
     display: flex;
+    flex: auto;
     align-items: center;
     flex-direction: column;
-    justify-content: center;
-    margin-top: 10vh;
+    justify-content: flex-end;
   
   }
   
