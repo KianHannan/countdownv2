@@ -1,0 +1,60 @@
+
+@font-face {
+    font-family: "Kuro-Regular";
+    src: url('webFonts/KuroRegular/font.woff2') format('woff2'), url('webFonts/KuroRegular/font.woff') format('woff');
+  }
+  @font-face {
+    font-family: "Ghibli";
+    src: url('webFonts/Ghibli/font.woff2') format('woff2'), url('webFonts/Ghibli/font.woff') format('woff');
+  }
+  @font-face {
+    font-family: "Ghibli-Bold";
+    src: url('webFonts/GhibliBold/font.woff2') format('woff2'), url('webFonts/GhibliBold/font.woff') format('woff');
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: "Ghibli";
+    color: #3131ff;
+    background-color: #ffff31;
+  }
+  
+  h2 {
+  
+    font-size: 3rem;
+    font-weight: lighter;
+    padding: 3rem;
+  }
+  
+  
+  
+  
+  .Reunited {
+    min-height: 110vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 10vh;
+  
+  }
+  
+  .countdown {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 50vh;
+  
+  }
+  
+  .day,.hour,.minute,.second {
+    font-family: "Kuro-Regular";
+    font-size: 2rem;
+    font-weight: lighter;
+  }
+  
