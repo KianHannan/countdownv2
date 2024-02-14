@@ -19,22 +19,47 @@
   }
   body {
     font-family: "Ghibli";
-    color: #3131ff;
-    background-color: #ffff31;
+    color: #ffb3ff;
+    background-color: #B7FFF1;
   }
   
+  h1 {
+    text-align: center;
+    font-size: 5rem;
+    font-weight: bolder;
+    padding: 3rem;
+  }
+
   h2 {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    padding: 3rem;
+  }
   
+  h3 {
+    text-align: center;
     font-size: 3rem;
     font-weight: lighter;
     padding: 3rem;
   }
-  
-  
-  
+
+
+  .Banner {
+    text-align: center;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 10vh;
+     
+  }
   
   .Reunited {
-    min-height: 110vh;
+    text-align: center;
+    color: #857453;
+    min-height: 90vh;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -44,6 +69,8 @@
   }
   
   .countdown {
+    text-align: center;
+    color: #857453;
     display: flex;
     justify-content: space-around;
     text-align: center;
@@ -53,6 +80,7 @@
   }
   
   .day,.hour,.minute,.second {
+    text-align: center;
     font-family: "Kuro-Regular";
     font-size: 2rem;
     font-weight: lighter;
